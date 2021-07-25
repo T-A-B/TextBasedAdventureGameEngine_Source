@@ -7,7 +7,7 @@ import java.util.Set;
 
 public interface IPlayerAttributes {
 
-
+     void initialize();
      void loadAttributes(ArrayList<PlayerAttribute> attributeList);
 
 

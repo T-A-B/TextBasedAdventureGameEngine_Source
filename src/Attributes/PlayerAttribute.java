@@ -4,42 +4,38 @@ public abstract class PlayerAttribute implements IAttribute{
 
 
     @Override
-    public String getAttributeName() {
-        return null;
-    }
+    public abstract String getAttributeName();
 
 
 
     @Override
-    public String getAttributeDescription() {
-        return null;
-    }
+    public abstract String getAttributeDescription();
 
     @Override
-    public Boolean isLevelable() {
-        return null;
-    }
+    public abstract Boolean isLevelable();
 
     @Override
-    public void setAttributeLevel(double d) {
+    public abstract void setAttributeLevel(double p_value);
 
-    }
+
 
     @Override
-    public double getAttributeLevel() {
-        return 0;
-    }
-    public double getStartingLevel(){
-        return 0;
-    }
+    public abstract double getAttributeLevel();
+
+
+    public abstract void levelUpByOne();
+
+
+    public abstract void levelUpByValue(double p_value);
 
     @Override
     public String toString() {
      return "Attribute Name: " + getAttributeName() +"\n"
              + "Attribute Description: " + getAttributeDescription() + "\n"
              + "Starting LeveL: " +  getStartingLevel() + "\n"
+             + "Effective Level: " +  getEffectiveLevel() + "\n"
              + "Level: " + getAttributeLevel() + "\n"
              + "isLevelable?: " + isLevelable() + "\n"
-             +"***************************************";
+             +"***************************************\n\n";
     }
 }

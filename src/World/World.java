@@ -1,5 +1,6 @@
 package World;
 
+import Player.Player;
 import Stages.Stage;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class World implements IWorld{
 
 
     @Override
-    public void start() {
+    public void start(Player p_player) {
 
     }
 

@@ -38,4 +38,16 @@ StrengthAttribute k = new StrengthAttribute();
     public void loadAttributes(ArrayList<PlayerAttribute> attributeList) {
         m_player_attributes.addAll(attributeList);
     }
+
+    public void initialize(){
+        for (PlayerAttribute p: m_player_attributes
+             ) {
+
+
+
+            p.setAttributeLevel(p.getStartingLevel());
+            p.setEffectiveLevel(p.getStartingLevel());
+
+        }
+    }
 }
