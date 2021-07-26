@@ -1,14 +1,16 @@
 package Player;
 
+import Attributes.GameAttributes;
 import Attributes.PlayerAttributes;
 
 public class Player implements IPlayer{
-    PlayerAttributes m_player_attributes;
+    PlayerAttributes m_player_attributes = new PlayerAttributes();
     String m_player_name;
     int m_currentStage;
-
+    int m_level_up_points = 1;
     public Player(){
-
+        GameAttributes g = new GameAttributes();
+    m_player_attributes.loadAttributes(g.getGameAttributes());
     }
 
     @Override
@@ -44,5 +46,25 @@ public class Player implements IPlayer{
     @Override
     public int getCurrentStage() {
         return m_currentStage;
+    }
+
+    @Override
+    public int getLevelUpPoints() {
+        return m_level_up_points;
+    }
+
+    @Override
+    public void addLevelUpPoints(int p_amount) {
+    m_level_up_points += p_amount;
+    }
+
+    @Override
+    public void spendLevelUpPoint() {
+    m_level_up_points--;
+    }
+
+    @Override
+    public void spendLevelUpPoints() {
+
     }
 }

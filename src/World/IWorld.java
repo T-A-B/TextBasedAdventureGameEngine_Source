@@ -9,6 +9,6 @@ public interface IWorld {
     void start(Player p);
 
     void populateWorld(ArrayList<? extends Stage> p_stage_list);
-
+    Player getActivePlayer();
 
 }

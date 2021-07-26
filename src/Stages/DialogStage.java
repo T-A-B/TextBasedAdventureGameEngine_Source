@@ -4,9 +4,9 @@ import Enumerations.STAGE_TYPE;
 import Interfaces.IDialogStage;
 
 public abstract class DialogStage extends Stage implements IDialogStage {
-    private int stageID;
-    private STAGE_TYPE m_stage_type;
-    private String[] m_stage_dialog;
+
+    private STAGE_TYPE m_stage_type = STAGE_TYPE.DIALOG;
+
 
     @Override
     public STAGE_TYPE getStageType() {
@@ -14,12 +14,10 @@ public abstract class DialogStage extends Stage implements IDialogStage {
     }
 
     @Override
-    public String[] getStageDialog() {
-        return new String[0];
-    }
+    public abstract String[] getStageDialog();
 
     @Override
-    public int getStageID() {
-        return this.stageID;
+    public abstract int getStageID();
+
     }
-}
+

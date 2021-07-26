@@ -15,6 +15,7 @@ StrengthAttribute k = new StrengthAttribute();
   public PlayerAttributes(){
       super();
       m_player_attributes = new ArrayList();
+      initialize();
   }
 
   public PlayerAttribute getAttributeByName(String p_strName) {
