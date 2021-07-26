@@ -7,10 +7,34 @@ public class Player implements IPlayer{
     String m_player_name;
     int m_currentStage;
 
+    public Player(){
+
+    }
+
     @Override
     public String getPlayerName() {
         return m_player_name;
     }
+
+    @Override
+    public void setPlayerName() {
+    m_player_name = nameInputDialog();
+    }
+
+    @Override
+    public void setPlayerName(String p_string) {
+
+
+
+    }
+    public String nameInputDialog() {
+        NameEntryDialog dialog = new NameEntryDialog(this);
+        dialog.pack();
+        dialog.setVisible(true);
+
+        return dialog.getNameString();
+    }
+
 
     @Override
     public PlayerAttributes getPlayerAttributes() {

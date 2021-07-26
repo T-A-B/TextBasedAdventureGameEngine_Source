@@ -43,4 +43,6 @@ public class PlayerAttributesTest
         System.out.println(p.getPlayerAttributes());
         assert (p.getAttributeByName("Strength").getAttributeLevel() == 17);
     }
+
+
 }

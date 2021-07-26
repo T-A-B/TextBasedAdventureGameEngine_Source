@@ -1,3 +1,5 @@
+package Player;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -5,9 +7,11 @@ public class NameEntryDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextArea textArea1;
+    private JTextField textField1;
 
-    public NameEntryDialog() {
+    Player m_Player = new Player();
+    public NameEntryDialog(Player p_player) {
+        m_Player = p_player;
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -42,7 +46,9 @@ public class NameEntryDialog extends JDialog {
 
     private void onOK() {
         // add your code here
+
         dispose();
+
     }
 
     private void onCancel() {
@@ -51,8 +57,12 @@ public class NameEntryDialog extends JDialog {
         dispose();
     }
 
+    public String getNameString(){
+        return textField1.getText();
+    }
+
     public static void main(String[] args) {
-        NameEntryDialog dialog = new NameEntryDialog();
+        NameEntryDialog dialog = new NameEntryDialog(null);
         dialog.pack();
         dialog.setVisible(true);
 
