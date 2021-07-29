@@ -27,6 +27,7 @@ public class MainGameFrame extends javax.swing.JFrame {
     World m_world;
     public MainGameFrame(World p_world) {
         initComponents();
+    this.setTitle("Text Based Adventure Game Engine");
        m_world = p_world;
        setMainStagePanel(new DialogStagePanel(new DummyDialogStage()));
     }
