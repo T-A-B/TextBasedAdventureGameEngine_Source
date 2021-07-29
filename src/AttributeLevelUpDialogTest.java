@@ -1,10 +1,7 @@
 import Player.Player;
 import World.World;
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
+import Player.AttributeLevelUpDialog;
 public class AttributeLevelUpDialogTest {
     @Test
     public void DialogPopulateAttributesTest(){

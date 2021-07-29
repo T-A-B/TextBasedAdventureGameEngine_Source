@@ -12,7 +12,7 @@ public class GameAttributes {
         m_gameAttributes.add(new StrengthAttribute());
         m_gameAttributes.add(new IntellectAttribute());
         m_gameAttributes.add(new CharismaAttribute());
-        m_gameAttributes.add(new LuckAttribute());
+        m_gameAttributes.add(new WeaverhoodAttribute());
     }
     public ArrayList<PlayerAttribute> getGameAttributes() {
         return this.m_gameAttributes;

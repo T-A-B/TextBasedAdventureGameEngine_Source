@@ -1,5 +1,6 @@
+package Player;
+
 import Attributes.PlayerAttributes;
-import Player.Player;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -87,46 +88,56 @@ public class AttributeLevelUpDialog extends JDialog {
         m_btn_attribute1_lvl_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                m_player_attributes.getPlayerAttributes().get(0).levelUpByOne();
-                m_player.spendLevelUpPoint();
-                setPlayerLevelUpPointsLabel();
-                setAttributeLabels();
+                if ( m_player.getLevelUpPoints()  > 0) {
+                    m_player_attributes.getPlayerAttributes().get(0).levelUpByOne();
+                    m_player.spendLevelUpPoint();
+                    setPlayerLevelUpPointsLabel();
+                    setAttributeLabels();
+                }
             }
         });
         m_btn_attribute2_lvl_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                m_player_attributes.getPlayerAttributes().get(1).levelUpByOne();
-                m_player.spendLevelUpPoint();
-                setPlayerLevelUpPointsLabel();
-                setAttributeLabels();
+                if ( m_player.getLevelUpPoints()  > 0) {
+                    m_player_attributes.getPlayerAttributes().get(1).levelUpByOne();
+                    m_player.spendLevelUpPoint();
+                    setPlayerLevelUpPointsLabel();
+                    setAttributeLabels();
+                }
             }
         });
         m_btn_attribute3_lvl_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                m_player_attributes.getPlayerAttributes().get(2).levelUpByOne();
-                m_player.spendLevelUpPoint();
-                setPlayerLevelUpPointsLabel();
-                setAttributeLabels();
+                if ( m_player.getLevelUpPoints()  > 0) {
+                    m_player_attributes.getPlayerAttributes().get(2).levelUpByOne();
+                    m_player.spendLevelUpPoint();
+                    setPlayerLevelUpPointsLabel();
+                    setAttributeLabels();
+                }
             }
         });
         m_btn_attribute4_lvl_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                m_player_attributes.getPlayerAttributes().get(3).levelUpByOne();
-                m_player.spendLevelUpPoint();
-                setPlayerLevelUpPointsLabel();
-                setAttributeLabels();
+                if ( m_player.getLevelUpPoints()  > 0) {
+                    m_player_attributes.getPlayerAttributes().get(3).levelUpByOne();
+                    m_player.spendLevelUpPoint();
+                    setPlayerLevelUpPointsLabel();
+                    setAttributeLabels();
+                }
             }
         });
         m_btn_attribute5_lvl_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                m_player_attributes.getPlayerAttributes().get(4).levelUpByOne();
-                m_player.spendLevelUpPoint();
-                setPlayerLevelUpPointsLabel();
-                setAttributeLabels();
+                if ( m_player.getLevelUpPoints()  > 0) {
+                    m_player_attributes.getPlayerAttributes().get(4).levelUpByOne();
+                    m_player.spendLevelUpPoint();
+                    setPlayerLevelUpPointsLabel();
+                    setAttributeLabels();
+                }
             }
         });
 

@@ -5,11 +5,21 @@ import Interfaces.IDialogStage;
 public class DummyDialogStage extends DialogStage implements IDialogStage {
 
     String[] m_stage_dialog_array;
+    final String[] m_strings_array= {"Hello", "Goodbye"};
+    String[] m_stage_dialog_array2;
+    final String[] m_strings_array2= {"Yo whattttup", "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" +
+            "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" +
+            "WWWWWWWWWWWWWWWWWWWWWWWWWWWW\nWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"};
 
-    DummyDialogStage(String[] p_dialog_string_array) {
-        m_stage_dialog_array = p_dialog_string_array;
+    public DummyDialogStage() {
+        m_stage_dialog_array = m_strings_array;
     }
+    public DummyDialogStage(boolean b) {
+        if(b) {
+            m_stage_dialog_array = m_strings_array2;
+        }
 
+    }
 
     @Override
     public String[] getStageDialog() {
