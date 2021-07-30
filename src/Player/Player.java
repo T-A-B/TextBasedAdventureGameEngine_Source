@@ -8,9 +8,12 @@ public class Player implements IPlayer{
     String m_player_name;
     int m_currentStage;
     int m_level_up_points = 1;
+    BasicPlayerInventory m_player_inventory;
     public Player(){
         GameAttributes g = new GameAttributes();
     m_player_attributes.loadAttributes(g.getGameAttributes());
+
+
     }
 
     @Override
@@ -66,5 +69,17 @@ public class Player implements IPlayer{
     @Override
     public void spendLevelUpPoints() {
 
+    }
+
+    @Override
+    public BasicPlayerInventory getPlayerInventory() {
+        return m_player_inventory;
+    }
+
+
+
+    @Override
+    public void setPlayerInventory(BasicPlayerInventory p_player_inventory) {
+        m_player_inventory = p_player_inventory;
     }
 }

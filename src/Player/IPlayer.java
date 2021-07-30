@@ -12,6 +12,8 @@ public interface IPlayer {
     void addLevelUpPoints(int p_amount);
     void spendLevelUpPoint();
     void spendLevelUpPoints();
+    BasicPlayerInventory getPlayerInventory();
+    void setPlayerInventory(BasicPlayerInventory p_player_inventory);
 
 
 }

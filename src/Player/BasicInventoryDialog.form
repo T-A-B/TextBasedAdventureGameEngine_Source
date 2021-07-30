@@ -63,11 +63,7 @@
               </grid>
             </constraints>
             <properties>
-              <model>
-                <item value="Item 1"/>
-                <item value="Item 2"/>
-                <item value="Item 3"/>
-              </model>
+              <model/>
             </properties>
           </component>
           <component id="f4cab" class="javax.swing.JTextArea" binding="ItemDescriptionBox">
