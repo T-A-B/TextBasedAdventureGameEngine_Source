@@ -1,4 +1,4 @@
-package Player;
+package Interfaces;
 
 public interface IEquipItem {
 }

@@ -5,6 +5,7 @@ package World;/*
  */
 
 import Player.AttributeLevelUpDialog;
+import Player.Levels.BasicInventoryDialog;
 import Player.Player;
 import Stages.DialogStage;
 import Stages.DialogStagePanel;
@@ -97,7 +98,14 @@ public class MainGameFrame extends javax.swing.JFrame {
         });
 
         btn_Items.setText("Items");
-
+        btn_Items.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_AttributesActionPerformed(evt);
+                BasicInventoryDialog i = new BasicInventoryDialog(m_world.getActivePlayer().getPlayerInventory());
+                i.pack();
+                i.setVisible(true);
+            }
+        });
         btn_adventure_log.setText("Adventure Log");
         btn_adventure_log.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -195,6 +203,12 @@ public class MainGameFrame extends javax.swing.JFrame {
     private void btn_SpellsActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
+
+    private void btn_ItemsActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+
+    }
+
 
     /**
      * @param args the command line arguments

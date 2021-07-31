@@ -2,6 +2,7 @@ package Player;
 
 import Attributes.GameAttributes;
 import Attributes.PlayerAttributes;
+import Spells.SpellBook;
 
 public class Player implements IPlayer{
     PlayerAttributes m_player_attributes = new PlayerAttributes();
@@ -11,6 +12,7 @@ public class Player implements IPlayer{
     BasicPlayerInventory m_player_inventory;
     public Player(){
         GameAttributes g = new GameAttributes();
+        m_player_inventory = new BasicPlayerInventory();
     m_player_attributes.loadAttributes(g.getGameAttributes());
 
 
@@ -81,5 +83,10 @@ public class Player implements IPlayer{
     @Override
     public void setPlayerInventory(BasicPlayerInventory p_player_inventory) {
         m_player_inventory = p_player_inventory;
+    }
+
+    @Override
+    public SpellBook getSpellBook() {
+        return null;
     }
 }

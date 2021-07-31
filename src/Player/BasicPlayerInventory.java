@@ -7,6 +7,7 @@ public class BasicPlayerInventory implements IInventory{
 
     public BasicPlayerInventory() {
         m_inventory = new ArrayList<BasicItem>();
+        m_inventory.add(new BasicUsableItem("Starting Stone","Stone given to new players, what does it do!?", 150));
     }
     @Override
     public ArrayList<? extends IItem> getInvetoryItems() {

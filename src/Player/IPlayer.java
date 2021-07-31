@@ -1,5 +1,7 @@
 package Player;
 import Attributes.*;
+import Spells.SpellBook;
+
 public interface IPlayer {
 
 
@@ -14,6 +16,6 @@ public interface IPlayer {
     void spendLevelUpPoints();
     BasicPlayerInventory getPlayerInventory();
     void setPlayerInventory(BasicPlayerInventory p_player_inventory);
-
+    SpellBook getSpellBook();
 
 }

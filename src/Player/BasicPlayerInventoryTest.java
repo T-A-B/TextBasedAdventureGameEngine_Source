@@ -1,9 +1,8 @@
 package Player;
 
+import Player.Levels.BasicInventoryDialog;
 import PopupCreator.PopupCreator;
 import org.junit.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class BasicPlayerInventoryTest {
 

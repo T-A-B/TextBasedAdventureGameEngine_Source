@@ -1,18 +1,22 @@
-package Player;
+package Player.Levels;
+
+import Player.BasicPlayerInventory;
+import Player.IInventoryDialog;
+import Player.IItem;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 
-public class BasicInventoryDialog extends JDialog implements IInventoryDialog{
+public class BasicInventoryDialog extends JDialog implements IInventoryDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
     private JList ItemList;
     private JTextArea ItemDescriptionBox;
+    private JTextArea textArea1;
     private JButton m_useButton;
     private JButton m_discardButton;
     private BasicPlayerInventory m_player_inventory;

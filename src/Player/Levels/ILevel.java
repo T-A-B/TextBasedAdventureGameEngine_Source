@@ -1,4 +1,4 @@
-package Levels;
+package Player.Levels;
 
 import Stages.Stage;
 
