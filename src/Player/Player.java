@@ -10,6 +10,7 @@ public class Player implements IPlayer{
     int m_currentStage;
     int m_level_up_points = 1;
     BasicPlayerInventory m_player_inventory;
+    SpellBook m_player_spellbook;
     public Player(){
         GameAttributes g = new GameAttributes();
         m_player_inventory = new BasicPlayerInventory();
@@ -87,6 +88,6 @@ public class Player implements IPlayer{
 
     @Override
     public SpellBook getSpellBook() {
-        return null;
+        return m_player_spellbook;
     }
 }

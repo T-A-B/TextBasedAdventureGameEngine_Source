@@ -4,6 +4,7 @@ import Battle.Enemy;
 import Player.Player;
 
 public abstract class SpellEffect implements ISpellEffect {
+
     @Override
     public abstract String getSpellEffectName();
     @Override

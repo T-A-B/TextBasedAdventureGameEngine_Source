@@ -61,7 +61,7 @@ public class BasicInventoryDialog extends JDialog implements IInventoryDialog {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                if(ItemList.getSelectedValue() != null) {
-                   ItemDescriptionBox.setText(m_player_inventory.getItemByName((String) ItemList.getSelectedValue()).getItemDescription());
+                   ItemDescriptionBox.setText(m_player_inventory.getItemByName((String) ItemList.getSelectedValue()).getItemDescription() + "\n Uses: " + m_player_inventory.getItemByName((String) ItemList.getSelectedValue()).getCharges());
                }
             }
         });

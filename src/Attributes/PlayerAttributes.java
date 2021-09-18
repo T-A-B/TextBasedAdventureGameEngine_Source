@@ -11,7 +11,7 @@ public class PlayerAttributes implements IPlayerAttributes {
       return m_player_attributes;
   }
 
-StrengthAttribute k = new StrengthAttribute();
+
   public PlayerAttributes(){
       super();
       m_player_attributes = new ArrayList();
