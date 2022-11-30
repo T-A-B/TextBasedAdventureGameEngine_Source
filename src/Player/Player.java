@@ -31,8 +31,7 @@ public class Player implements IPlayer{
 
     @Override
     public void setPlayerName(String p_string) {
-
-
+    m_player_name = p_string;
 
     }
     public String nameInputDialog() {
